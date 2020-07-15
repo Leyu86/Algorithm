@@ -1,5 +1,7 @@
 package com.leyu.algorithm.common.array;
 
+import com.leyu.algorithm.common.array.sort.QuickSort;
+
 public class Arrays {
 
     public static int[] copyOf(int[] original, int newLength) {
@@ -26,6 +28,10 @@ public class Arrays {
                 return b.append(']').toString();
             b.append(", ");
         }
+    }
+
+    public static void sort(int[] a) {
+        QuickSort.quickSort(a);
     }
 
 

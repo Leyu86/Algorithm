@@ -16,7 +16,7 @@ public class SortTest {
 
         //quickSortTest();
 
-        //insertSortTest();
+        insertSortTest();
 
         //shellSortTest();
 
@@ -28,27 +28,27 @@ public class SortTest {
 
         //radixQueueSortTest();
 
-        heapSortTest();
+        //heapSortTest();
     }
 
     static void heapSortTest() {
         HeapSort.heapSort(target);
-        System.out.println("选择排序后：" + Arrays.toString(target));
+        System.out.println("堆排序后：" + Arrays.toString(target));
     }
 
     static void radixQueueSortTest() {
         RadixQueueSort.radixSort(target);
-        System.out.println("选择排序后：" + Arrays.toString(target));
+        System.out.println("基数（队列实现）排序后：" + Arrays.toString(target));
     }
 
     static void radixSortTest() {
         RadixSort.radixSort(target);
-        System.out.println("选择排序后：" + Arrays.toString(target));
+        System.out.println("基数排序后：" + Arrays.toString(target));
     }
 
     static void mergeSortTest() {
         MergeSort.mergeSort(target);
-        System.out.println("选择排序后：" + Arrays.toString(target));
+        System.out.println("归并排序后：" + Arrays.toString(target));
     }
 
     static void selectSortTest() {
